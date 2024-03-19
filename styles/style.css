@@ -1,0 +1,244 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Oswald:wght@200;500&display=swap");
+
+:root {
+  --main-height: 0px;
+}
+
+@font-face {
+  font-family: "montserratRegular";
+  src: url("fonts/montserrat/montserratRegular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "montserratMedium";
+  src: url("fonts/montserrat/montserratMedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "oswaldExtraLight";
+  src: url("fonts/oswald/oswaldExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "oswaldRegular";
+  src: url("fonts/oswald/oswaldRegular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "oswaldMedium";
+  src: url("fonts/oswald/oswaldMedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  font-family: "montserratRegular", Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-color: #666;
+}
+
+body {
+  background-color: #fff;
+  width: 793.7007874px;
+  height: 1122.519685px;
+  margin: auto;
+}
+
+main {
+  height: var(--main-height);
+  overflow: hidden;
+}
+
+/* Cabeçalho */
+
+header {
+  height: 178px;
+  background-color: #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+header div:first-of-type > p {
+  letter-spacing: 0.3px;
+}
+
+h1 {
+  font-family: "oswaldMedium", "Times New Roman", Times, serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+h1 > span {
+  font-family: "oswaldExtraLight", "Times New Roman", Times, serif;
+  font-weight: lighter;
+  font-size: 60px;
+}
+
+header ul {
+  font-family: "montserratMedium", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  list-style-type: none;
+  text-align: right;
+}
+
+header ul li:not(:first-child) {
+  margin-top: 6px;
+}
+
+li > a {
+  text-decoration: none;
+  color: #000;
+}
+
+li > a > i {
+  font-size: 20px;
+}
+
+i {
+  color: #fb5012;
+}
+
+/* Corpo */
+
+main {
+  padding: 0 40px;
+}
+
+h2 {
+  font-family: "oswaldRegular", "Times New Roman", Times, serif;
+  margin-left: 10px;
+}
+
+div.title {
+  margin-top: 26.5px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+div.title:last-of-type {
+  margin-top: 15px;
+}
+
+span.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  background-color: #fb5012;
+  border-radius: 50%;
+}
+
+span.icon i {
+  color: #fff;
+  font-size: 16px;
+}
+
+main > div:first-of-type p {
+  text-indent: 30px;
+  text-align: justify;
+  line-height: 15px;
+  font-size: 15px;
+}
+
+div:nth-child(3) div.course:nth-child(2){ 
+  /* div informando a faculdade */
+  margin-bottom: 6px;
+}
+
+main > div:first-of-type p,
+div.course {
+  margin-left: 45px;
+}
+
+p.description {
+  text-align: justify;
+  font-size: 13px;
+  line-height: 15px;
+  text-indent: 30px;
+}
+
+div.course:not(main div:nth-child(3) > div.course, div.course:last-of-type) {
+  margin-bottom: 8px;
+}
+
+div.course p:first-child {
+  font-family: "montserratMedium", Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+div.course p:nth-child(2) {
+  font-family: "montserratRegular", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+div.course p:first-child > span {
+  font-family: "montserratMedium", Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: #fb5012;
+}
+
+/* Habilidades */
+
+div#contentColumns {
+  justify-content: space-between;
+  width: 430px;
+  display: flex;
+  margin: auto;
+  font-size: 14px;
+}
+
+div#contentTabCol1 {
+  line-height: 14.5px;
+  text-align: right;
+}
+
+div#contentTabCol1 > h3,
+div#contentTabCol2 > h3 {
+  margin-bottom: 3px;
+}
+
+div#contentTabCol1 > ul {
+  list-style-type: none;
+}
+
+div#contentTabCol2 > ul {
+  list-style-position: inside;
+}
+
+div#contentTabCol2 > ul > li:first-child {
+  margin-top: -3px;
+}
+
+span.dot {
+  border: 2px solid #fb5012;
+  display: inline-block;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+
+span.dot.filled {
+  background-color: #fb5012;
+}
