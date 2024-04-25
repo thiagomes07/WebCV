@@ -67,7 +67,7 @@ main {
 /* Cabeçalho */
 
 header {
-  height: 140px;
+  height: 130px;
   background-color: #eee;
   display: flex;
   justify-content: space-between;
@@ -132,7 +132,7 @@ h2 {
 }
 
 div.title {
-  margin-top: 26.5px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
   margin-bottom: 3px;
