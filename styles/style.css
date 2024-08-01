@@ -64,10 +64,14 @@ main {
   overflow: hidden;
 }
 
+p {
+  font-size: 14px;
+}
+
 /* Cabeçalho */
 
 header {
-  height: 130px;
+  height: 107px;
   background-color: #eee;
   display: flex;
   justify-content: space-between;
@@ -78,17 +82,17 @@ header {
 h1 {
   font-family: "oswaldMedium", "Times New Roman", Times, serif;
   font-weight: 500;
-  font-size: 40px;
-  line-height: 50px;
+  font-size: 35px;
+  line-height: 40px;
 }
 
 h1 > span {
   font-family: "oswaldExtraLight", "Times New Roman", Times, serif;
   font-weight: lighter;
-  font-size: 60px;
+  font-size: 50px;
 }
 
-header > div:nth-child(2) {
+header > div:last-child {
   height: 100%;
   display: flex;
   justify-content: center;
@@ -97,7 +101,7 @@ header > div:nth-child(2) {
 
 header ul {
   font-family: "montserratMedium", Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   list-style-type: none;
   height: 100%;
@@ -107,13 +111,19 @@ header ul {
   align-items: end;
 }
 
+header ul i {
+  /* ícones da div esquerda do cabeçalho */
+  width: 20px;
+  text-align: center;
+}
+
 li > a {
   text-decoration: none;
   color: #000;
 }
 
 li > a > i {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 i {
@@ -129,13 +139,13 @@ main {
 h2 {
   font-family: "oswaldRegular", "Times New Roman", Times, serif;
   margin-left: 10px;
+  font-size: 23px;
 }
 
 div.title {
-  margin-top: 20px;
+  margin-top: 16px;
   display: flex;
   align-items: center;
-  margin-bottom: 3px;
 }
 
 div.title:last-of-type {
@@ -161,7 +171,7 @@ main > div:first-of-type p {
   text-indent: 30px;
   text-align: justify;
   line-height: 16px;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 div:nth-child(3) div.course:nth-child(2) {
@@ -188,11 +198,11 @@ div.course:not(main div:nth-child(3) > div.course, div.course:last-of-type) {
 div.course p:first-child {
   font-family: "montserratMedium", Arial, Helvetica, sans-serif;
   font-weight: bolder;
+  font-size: 16px;
 }
 
 div.course p:nth-child(2) {
   font-family: "montserratRegular", Arial, Helvetica, sans-serif;
-  font-size: 15px;
   font-weight: bolder;
 }
 
@@ -209,7 +219,7 @@ div#contentColumns {
   width: 430px;
   display: flex;
   margin: auto;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 div#contentTabCol1 {
@@ -219,6 +229,7 @@ div#contentTabCol1 {
 
 div#contentTabCol1 > h3,
 div#contentTabCol2 > h3 {
+  line-height: 14.5px;
   margin-bottom: 3px;
 }
 
