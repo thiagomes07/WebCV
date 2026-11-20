@@ -2,10 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Oswald:wght@200;500&display=swap");
 
-:root {
-  --main-height: 0px;
-}
-
 @font-face {
   font-family: "montserratRegular";
   src: url("fonts/montserrat/montserratRegular.ttf") format("truetype");
@@ -55,17 +51,50 @@ html {
 body {
   background-color: #fff;
   width: 793.7007874px;
-  height: 1122.519685px;
+  min-height: 1122.519685px;
   margin: auto;
-}
-
-main {
-  height: var(--main-height);
-  overflow: hidden;
 }
 
 p {
   font-size: 14px;
+}
+
+/* Aviso de contexto */
+
+.archive-notice {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 12px;
+  align-items: start;
+  padding: 16px 30px;
+  color: #2d211d;
+  background-color: #fff4ef;
+  border-bottom: 2px solid #fb5012;
+}
+
+.archive-notice > i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  color: #fff;
+  background-color: #fb5012;
+  border-radius: 50%;
+}
+
+.archive-notice strong {
+  display: block;
+  margin-bottom: 3px;
+  font-family: "montserratMedium", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.archive-notice p {
+  max-width: 68ch;
+  font-size: 12px;
+  line-height: 17px;
 }
 
 /* Cabeçalho */
@@ -255,4 +284,84 @@ span.dot {
 
 span.dot.filled {
   background-color: #fb5012;
+}
+
+@media (max-width: 820px) {
+  body {
+    width: 100%;
+    min-height: 100dvh;
+  }
+
+  .archive-notice {
+    grid-template-columns: 30px 1fr;
+    padding: 14px 18px;
+  }
+
+  .archive-notice > i {
+    width: 30px;
+    height: 30px;
+  }
+
+  header {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 24px 18px;
+  }
+
+  header > div:last-child,
+  header ul {
+    width: 100%;
+  }
+
+  header ul {
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+  header li,
+  header a {
+    overflow-wrap: anywhere;
+  }
+
+  main {
+    padding: 0 18px 32px;
+  }
+
+  main > div:first-of-type p,
+  div.course {
+    margin-left: 0;
+  }
+
+  main > div:first-of-type p,
+  p.description {
+    text-align: left;
+    text-indent: 0;
+  }
+
+  div#contentColumns {
+    width: 100%;
+    max-width: 430px;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 520px) {
+  h1 {
+    font-size: 29px;
+    line-height: 34px;
+  }
+
+  h1 > span {
+    font-size: 42px;
+  }
+
+  div#contentColumns {
+    flex-direction: column;
+  }
+
+  div#contentTabCol1 {
+    text-align: left;
+  }
 }

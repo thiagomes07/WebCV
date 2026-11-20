@@ -1,3 +1,7 @@
-# Currículo Feito com HTML e CSS
+# Currículo feito com HTML e CSS
 
-[Link para o PDF do currículo](assets/ThiagoGomesCv.pdf)
+Este projeto é um registro histórico e contém informações desatualizadas. A
+página foi projetada e desenvolvida manualmente, antes da popularização da IA
+generativa, sem o uso de ferramentas de inteligência artificial.
+
+Os arquivos PDF foram removidos para evitar a exposição de dados pessoais.
